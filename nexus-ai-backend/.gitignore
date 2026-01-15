@@ -1,0 +1,13 @@
+# Ignore the virtual environment folder
+venv/
+.venv/
+
+# Ignore compiled python files
+__pycache__/
+*.pyc
+
+# CRITICAL: Ignore environment variables (Secrets)
+.env
+
+# Ignore the local database file
+.db
