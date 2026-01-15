@@ -28,17 +28,18 @@ It solves the "Goldfish Memory" problem of LLMs by implementing a persistent dat
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
+
 ```git clone [https://github.com/TeenaMandaar/ResearchBot.git](https://github.com/TeenaMandaar/TeenaMandaar.git)
-cd nexus-ai-backend ```
+cd nexus-ai-backend  ```
 
 
-## 2. Set Up Environment Variables
+### 2. Set Up Environment Variables
 Create a .env file in the root directory and add your API keys:
 
 ```GROQ_API_KEY="your_groq_key"
 TAVILY_API_KEY="your_tavily_key" ```
 
-## 3. Run Locally
+### 3. Run Locally
 Start the Backend Server:
 
 ```uvicorn app.main:app --reload
@@ -46,6 +47,6 @@ Start the Frontend UI: ```
 
 ```streamlit run frontend/ui.py ```
 
-## 4. Run with Docker (Optional)
+### 4. Run with Docker (Optional)
 ```docker build -t ResearchBot .
 docker run -p 8000:8000 nexus-ai ```
