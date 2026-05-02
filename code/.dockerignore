@@ -1,0 +1,25 @@
+# Ignore virtual environments - these are platform-specific and will break Linux builds
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Ignore Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Ignore local secrets
+.env
+
+# Ignore database files
+*.db
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore other unnecessary files
+*.md
+Procfile
