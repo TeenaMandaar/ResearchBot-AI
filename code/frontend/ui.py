@@ -1,9 +1,14 @@
 import streamlit as st
 import requests
+import os
 
 # Page Configuration
 st.set_page_config(page_title="ResearchBot AI", page_icon="🧠")
 st.title("🧠 ResearchBot: Friendly Assistant")
+
+# Read backend URL from environment variable (set this on your deployment platform)
+# For local development it defaults to localhost
+BACKEND_URL = os.environ.get("BACKEND_URL", "http://127.0.0.1:8000")
 
 # Step 1: Initialize Session State
 # We need to make sure these variables exist before we use them
@@ -62,7 +67,7 @@ if prompt:
         with st.spinner("Thinking..."):
             try:
                 # Prepare data to send to FastAPI
-                api_url = "http://127.0.0.1:8000/chat"
+                api_url = f"{BACKEND_URL}/chat"
                 my_payload = {
                     "query": prompt,
                     "session_id": st.session_state.session_id

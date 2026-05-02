@@ -10,4 +10,4 @@ __pycache__/
 .env
 
 # Ignore the local database file
-.db
+*.db
