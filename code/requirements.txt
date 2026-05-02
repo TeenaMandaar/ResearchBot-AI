@@ -2,9 +2,11 @@ fastapi
 uvicorn
 sqlmodel
 python-dotenv
+streamlit
+requests
 langchain-groq
 langchain-community
 langchain-core
 langgraph
 pydantic-settings
-tavily-python
+tavily-python
